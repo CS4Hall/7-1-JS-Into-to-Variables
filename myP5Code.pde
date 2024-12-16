@@ -4,13 +4,14 @@ void setup() {
     background(255,255,255,200);
 }
 
-//Varaible Declarations Go Here
+//🎯Varaible Declarations Go Here
 var eyeSize = 8;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   fill(255,255,255);
   strokeWeight(1);
+  background(255,255,255,200);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
@@ -20,8 +21,8 @@ void draw(){
   ellipse(200, 170, 150, 150);    // face
 
   fill(0, 0, 0);
-  ellipse(170, 150, 10, 10);  // left eye
-  ellipse(230, 150, 10, 10);  // right eye
+  ellipse(170, 150, eyeSize, eyeSize);  // left eye
+  ellipse(230, 150, eyeSize, eyeSize);  // right eye
 
   line(150, 200, 250, 200);   // mouth
 
@@ -31,6 +32,8 @@ void draw(){
   
 
 }
+
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
@@ -47,6 +50,8 @@ void mousePressed(){
   var myText = "x: " + mouseX + "\ny: " + mouseY;
   text(myText, mouseX + 15, mouseY);
   console.log(myText);
+  
+  
 }
 
 //🟡Key Pressed Procedure - Runs When Keyboard Key is Pressed
